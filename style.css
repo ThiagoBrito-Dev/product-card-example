@@ -21,14 +21,10 @@ div.product-info span.product-price {
 }
 
 body main div.product-card {
-  position: absolute;
-
   width: 400px;
   background-color: #ecedef;
   padding: 32px 40px;
   border-radius: 2px;
-
-  transform: translate(-50%, -50%);
   text-transform: uppercase;
 }
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JQuery Product Card</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="product-card">
+        <h1>Air Jordan 1</h1>
+        <p>Lorem, ipsum dolor sit amet.</p>
+
+        <div class="product-image"></div>
+        <div class="product-colors">
+          <span
+            class="red active"
+            data-color="#f44336"
+            data-src="url(assets/red.jpg)"
+          ></span>
+          <span
+            class="orange"
+            data-color="#ff5722"
+            data-src="url(assets/orange.jpg)"
+          ></span>
+          <span
+            class="pink"
+            data-color="#ee8484"
+            data-src="url(assets/pink.jpg)"
+          ></span>
+          <span
+            class="purple"
+            data-color="#673ab7"
+            data-src="url(assets/purple.jpg)"
+          ></span>
+        </div>
+        <div class="product-info">
+          <span class="product-price">US$ 129</span>
+          <button type="button" class="cart-button">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      $(".product-colors span").click(function () {
+        $(".product-colors span").removeClass("active");
+        $(this).addClass("active");
+
+        $("body").css("background-color", $(this).attr("data-color"));
+        $(".product-image").css("background-image", $(this).attr("data-src"));
+        $(".product-price").css("color", $(this).attr("data-color"));
+        $(".cart-button").css("color", $(this).attr("data-color"));
+      });
+    </script>
+  </body>
+</html>

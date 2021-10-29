@@ -15,9 +15,9 @@
 ## README versions
 
 <div>
-  <a href="https://github.com/ThiagoBrito-Dev/product-card-example/blob/main/README.md">
+  <a href="https://github.com/trybrito/product-card-example/blob/main/README.md">
     Portuguese (pt-br)</a>
   |   
-  <a href="https://github.com/ThiagoBrito-Dev/product-card-example/blob/main/README-en.md">
+  <a href="https://github.com/trybrito/product-card-example/blob/main/README-en.md">
     English (en-us)</a>
 </div>
